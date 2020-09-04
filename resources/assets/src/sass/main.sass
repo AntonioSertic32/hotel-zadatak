@@ -1,0 +1,111 @@
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: Arial
+  font-style: normal
+
+/* Navbar */
+
+nav 
+  width: 100%
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+
+.navigation-1 
+  height: 55px
+  background:  #F0ECE7
+  font-weight: normal
+  font-size: 16px
+  line-height: 20px
+  letter-spacing: 1px
+  color: #1D1D1D
+  display: flex
+  align-items: center
+  justify-content: space-between
+  
+  .navigation-1_align
+    margin: auto
+    width: 70%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .navigation-1_left
+      display: inline-block
+
+      img:not(:first-child) 
+        margin-right: 10px
+        margin-left: 35px
+
+      .location_image 
+        width: 16.5px
+        height: 24px
+
+      .mail_image 
+        width: 24px
+        height: 16.5px
+
+      .key_image 
+        width: 23.76px
+        height: 22.57px
+        
+    .navigation-1_right
+      float: right
+
+      .search_image
+        width: 19.63px
+        height: 19.63px
+        margin-right: 10px
+      
+      span:not(:last-child)
+        border-right: 1px solid black
+        padding-right: 7px
+      span:last-child
+        padding-left: 7px
+        color: #9B6333
+
+.navigation-2 
+  height: 73px
+  background: #272525
+  color: #ffffff
+  padding: 0
+
+  .navigation-2_align
+    margin: auto
+    width: 70%
+    display: flex
+    align-items: center
+
+    div
+      margin: 0
+
+    .navigation-2_left
+      width: 20%
+
+    .navigation-2_middle
+      width: 60%
+
+    .navigation-2_right
+      width: 20%
+    
+    h3
+      font-family: 'Playfair Display', serif
+      font-style: normal
+      font-size: 50px  
+      line-height: 67px
+      text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25)
+
+    ul
+      margin-bottom: 0
+      text-align: center
+      li 
+        display: inline-block
+        margin: 0 20px
+        a
+          font-family: Arial
+          font-weight: bold
+          font-size: 16px
+          line-height: 23px
+          &:hover
+            cursor: pointer

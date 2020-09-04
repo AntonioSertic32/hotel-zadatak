@@ -3,7 +3,7 @@ require("laravel-mix-purgecss");
 
 mix.setPublicPath("./public");
 
-mix.sass("resources/assets/src/scss/main.scss", "public/assets/css");
+mix.sass("resources/assets/src/sass/main.sass", "public/assets/css");
 mix.js("resources/assets/src/js/app.js", "public/assets/js/app.js");
 
 mix.version();

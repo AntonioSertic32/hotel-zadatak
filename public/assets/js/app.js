@@ -14044,7 +14044,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ "./resources/assets/src/scss/main.scss":
+/***/ "./resources/assets/src/sass/main.sass":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -14055,7 +14055,7 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./resources/assets/src/js/app.js");
-module.exports = __webpack_require__("./resources/assets/src/scss/main.scss");
+module.exports = __webpack_require__("./resources/assets/src/sass/main.sass");
 
 
 /***/ })
