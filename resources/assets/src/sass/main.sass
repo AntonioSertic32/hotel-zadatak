@@ -111,7 +111,7 @@ nav
           &:hover
             cursor: pointer
 
-.section_one
+.home
   color: #fff
   height: 919px
   overflow: hidden
@@ -123,7 +123,7 @@ nav
     filter: brightness(50%)
     height: 919px
 
-  .section_one-container
+  .home-container
     margin: auto
     width: 70%
     padding-top: 277px
@@ -159,6 +159,9 @@ nav
       letter-spacing: 2px
       text-transform: uppercase
 
+      &:hover
+        cursor: pointer
+
     .follow_us-container
       margin-top: 379px
 
@@ -175,7 +178,7 @@ nav
         display: inline-block
         filter: invert(100%)
         margin-right: 34px
-    .section_one-slider
+    .home-slider
       width: 1000px
       height: 351px
       background-color: yellow
@@ -183,47 +186,232 @@ nav
       top: 508px
       left: 400px
       
-.section_two
+.apartmants
   height: 1233px
   color: #383B37
   margin: auto
   width: 70%
   padding-top: 60px
 
-  .naslov
-    font-family: Playfair Display
-    font-weight: bold
-    font-size: 42px
-    line-height: 56px
-    letter-spacing: 2px
+  .apartmants-container
 
-  .podnaslov
-    font-weight: bold
-    font-size: 20px
-    line-height: 23px
-    
-  .about_us
-    width: 170px
-    height: 59px
-    background: #9B6333
-    color: #fff
-    box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2)
-    border-radius: 30px
-    border: none
-    outline: none
+    .about_us-container
+      width: 50%
+      display: inline-block
+      vertical-align: top
+      padding-right: 20px
+      margin-bottom: 61px
 
-    font-weight: bold
-    font-size: 16px
-    line-height: 23px
-    text-align: center
-    letter-spacing: 2px
-    text-transform: uppercase
+      .naslov
+        font-family: Playfair Display
+        font-weight: bold
+        font-size: 42px
+        line-height: 56px
+        letter-spacing: 2px
+        margin-bottom: 10px
 
-  .comment-container
-    .comment
-      font-size: 16px
-      line-height: 23px
-    .comment_creator
+      .podnaslov
+        font-weight: bold
+        font-size: 20px
+        line-height: 23px
+        margin-bottom: 30px
+        
+      .about_us
+        width: 170px
+        height: 59px
+        background: #9B6333
+        color: #fff
+        box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2)
+        border-radius: 30px
+        border: none
+        outline: none
+
+        font-weight: bold
+        font-size: 16px
+        line-height: 23px
+        text-align: center
+        letter-spacing: 2px
+        text-transform: uppercase
+
+        &:hover
+          cursor: pointer
+
+    .comment-container
+      width: 50%
+      padding-left: 20px
+      display: inline-block
+
+      .comment
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 22px
+
+      .comment_creator
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 1px
+
+      .comment_creator-title
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 0
+
+    .naslov
+      font-family: Playfair Display
       font-weight: bold
-      font-size: 20px
-      line-height: 25px
+      font-size: 42px
+      line-height: 56px
+      letter-spacing: 2px
+      margin-bottom: 30px
+
+    .best_apartmants
+      width: 1,764px
+      height: 732px
+      background-color: yellow
+      margin-bottom: 60px
+
+.service
+  height: 620px
+  display: flex
+
+  img 
+    display: inline-block
+    position: absolute
+    z-index: -1
+
+  .service_background
+    width: calc( 100% - 620px )
+    height: 355px
+
+  .service_maid
+    height: 620px
+    width: 620px
+    right: 0
+
+  .service_align
+    margin: 0 auto
+    width: 70%
+
+    .about_us-container
+      color: #fff
+    
+      .naslov
+        font-family: Playfair Display
+        font-weight: bold
+        font-size: 42px
+        line-height: 56px
+        letter-spacing: 2px
+        margin-top: 44px
+        margin-bottom: 10px
+
+      .podnaslov
+        font-weight: bold
+        font-size: 20px
+        line-height: 23px
+        margin-bottom: 30px
+
+      .paragraph
+        width: 674px
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 31px
+
+      .learn_more-link
+        font-weight: bold
+        font-size: 16px
+        line-height: 23px
+        color: #9B6333
+        text-decoration: none
+
+        .learn_more-arrow
+          margin-left: 19px
+          margin-top: 5.6px
+
+    .feature_cards
+      margin-top: 74px
+
+      .card
+        width: 254px
+        min-height: 193px
+        display: inline-block
+        vertical-align: top
+        margin-right: 39px 
+        
+        img 
+          z-index: 1
+          position: relative
+        
+        .card_body
+          background: #F0ECE7
+          padding: 11px 14px 21px 15px
+          min-height: 135px
+          margin-top: 5px
+
+          h4 
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: #383B37
+
+          .line
+            width: 100px
+            height: 1px
+            background-color: #9B6333
+            margin-top: 6px
+            margin-bottom: 4px
+
+          p 
+            font-size: 16px
+            line-height: 23px
+            color: #383B37
+
+.news
+  height: 500px
+
+.reviews
+  height: 500px
+
+.footer
+  height: 320px
+  color: #fff
+
+  .footer-1
+    height: 275px
+    background: #272525
+
+  .footer-2
+    height: 45px
+    background: #1D1D1D
+
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .footer-2_align
+      margin: auto
+      width: 70%
+      
+
+      p
+        display: inline-block
+        margin-bottom: 0
+
+        font-size: 12px
+        line-height: 25px
+        
+      .footer-2_left
+        display: inline-block
+
+
+      .footer-2_right
+        float: right
+
+        p 
+          font-weight: bold
+          margin-left: 38px
+
+        p:last-child
+          font-weight: normal
+          color: #D0D0D0
+          margin-left: 44px

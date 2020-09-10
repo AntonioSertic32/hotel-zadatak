@@ -58,10 +58,10 @@
     </div>
 {% endblock %}
 
-{% block section_one %}
-    <div class="section_one">
+{% block home %}
+    <div class="home">
         <img class="pozadina" src="images/pozadina.png" alt="">
-        <div class="section_one-container">
+        <div class="home-container">
             <h3 class="naslov">Feel like home, but better.</h3>
             <p class="podnaslov">World-famous. Deeply relaxing.</p>
             <button class="learn_more">Learn more</button>
@@ -72,29 +72,103 @@
                 <img class="icon" src="images/instagram.png" alt="">
             </div>
 
-            <div class="section_one-slider">
+            <div class="home-slider">
                 
             </div>
         </div>
     </div>
 {% endblock %}
 
-{% block section_two %}
-    <div class="section_two">
-        <div class="section_two-container">
-            <h3 class="naslov">Comfort & Design to relax in Luxury Hotel</h3>
-            <p class="podnaslov">Every day is a new day for relaxation.</p>
-            <button class="about_us">About us</button>
-
-            <div class="comment-container">
+{% block apartmants %}
+    <div class="apartmants">
+        <div class="apartmants-container">
+            <div class="about_us-container">
+                <h3 class="naslov">Comfort & Design to relax in Luxury Hotel</h3>
+                <p class="podnaslov">Every day is a new day for relaxation.</p>
+                <button class="about_us">About us</button>
+            </div><div class="comment-container">
                 <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis gravida metus quis varius. Nullam sit amet fringilla velit, non pretium nibh. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque.</p>
                 <p class="comment_creator">John Johnson</p>
-                <p class="comment">General manager</p>
+                <p class="comment_creator-title">General manager</p>
             </div>
 
             <h3 class="naslov">Best Apartments</h3>
+
+            <div class="best_apartmants">
+            
+            </div>
         </div>
     </div>
 {% endblock %}
 
+{% block service %}
+    <div class="service">
+        <img class="service_background" src="images/pozadina_2.png" alt=""></img>
+        <img class="service_maid" src="images/pozadina_3.png" alt=""></img>
 
+        <div class="service_align">
+            <div class="about_us-container">
+                <h3 class="naslov">Excellent service</h3>
+                <p class="podnaslov">Every day is a new day for relaxation.</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis gravida metus quis varius. Nullam sit amet fringilla velit, non pretium nibh. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque.</p>
+                <a href="#" class="learn_more-link">Learn more<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+            </div>
+
+            <div class="feature_cards">
+                <div class="card">
+                    <img src="images/services-1.png" alt=""></img>
+                    <div class="card_body">
+                        <h4>Orthopedic beds</h4>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ispum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/services-2.png" alt=""></img>
+                    <div class="card_body">
+                        <h4>Extraordinary cousine</h4>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis gravida.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/services-3.png" alt=""></img>
+                    <div class="card_body">
+                        <h4>Custom coffee</h4>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block news %}
+    <div class="news"></div>
+{% endblock %}
+
+{% block reviews %}
+    <div class="reviews"></div>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+        <div class="footer-1">
+        
+        </div>
+        <div class="footer-2">
+            <div class="footer-2_align">
+                <div class="footer-2_left">
+                    <p>@2020, Frontend akademija</p>
+                </div>
+
+                <div class="footer-2_right">
+                    <p>Privacy Policy</p>
+                    <p>Site map</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

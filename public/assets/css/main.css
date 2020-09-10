@@ -158,13 +158,13 @@ nav {
   cursor: pointer;
 }
 
-.section_one {
+.home {
   color: #fff;
   height: 919px;
   overflow: hidden;
 }
 
-.section_one .pozadina {
+.home .pozadina {
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -173,14 +173,14 @@ nav {
   height: 919px;
 }
 
-.section_one .section_one-container {
+.home .home-container {
   margin: auto;
   width: 70%;
   padding-top: 277px;
   position: relative;
 }
 
-.section_one .section_one-container .naslov {
+.home .home-container .naslov {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -188,14 +188,14 @@ nav {
   margin-bottom: 10px;
 }
 
-.section_one .section_one-container .podnaslov {
+.home .home-container .podnaslov {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   margin-bottom: 30px;
 }
 
-.section_one .section_one-container .learn_more {
+.home .home-container .learn_more {
   width: 198px;
   height: 59px;
   background: #9B6333;
@@ -213,11 +213,15 @@ nav {
   text-transform: uppercase;
 }
 
-.section_one .section_one-container .follow_us-container {
+.home .home-container .learn_more:hover {
+  cursor: pointer;
+}
+
+.home .home-container .follow_us-container {
   margin-top: 379px;
 }
 
-.section_one .section_one-container .follow_us-container .follow_us {
+.home .home-container .follow_us-container .follow_us {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -225,7 +229,7 @@ nav {
   margin-right: 27px;
 }
 
-.section_one .section_one-container .follow_us-container .icon {
+.home .home-container .follow_us-container .icon {
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -234,7 +238,7 @@ nav {
   margin-right: 34px;
 }
 
-.section_one .section_one-container .section_one-slider {
+.home .home-container .home-slider {
   width: 1000px;
   height: 351px;
   background-color: yellow;
@@ -243,7 +247,7 @@ nav {
   left: 400px;
 }
 
-.section_two {
+.apartmants {
   height: 1233px;
   color: #383B37;
   margin: auto;
@@ -251,21 +255,31 @@ nav {
   padding-top: 60px;
 }
 
-.section_two .naslov {
+.apartmants .apartmants-container .about_us-container {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  margin-bottom: 61px;
+}
+
+.apartmants .apartmants-container .about_us-container .naslov {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
   line-height: 56px;
   letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
-.section_two .podnaslov {
+.apartmants .apartmants-container .about_us-container .podnaslov {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
+  margin-bottom: 30px;
 }
 
-.section_two .about_us {
+.apartmants .apartmants-container .about_us-container .about_us {
   width: 170px;
   height: 59px;
   background: #9B6333;
@@ -283,14 +297,226 @@ nav {
   text-transform: uppercase;
 }
 
-.section_two .comment-container .comment {
-  font-size: 16px;
-  line-height: 23px;
+.apartmants .apartmants-container .about_us-container .about_us:hover {
+  cursor: pointer;
 }
 
-.section_two .comment-container .comment_creator {
+.apartmants .apartmants-container .comment-container {
+  width: 50%;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.apartmants .apartmants-container .comment-container .comment {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 22px;
+}
+
+.apartmants .apartmants-container .comment-container .comment_creator {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
+  margin-bottom: 1px;
+}
+
+.apartmants .apartmants-container .comment-container .comment_creator-title {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+.apartmants .apartmants-container .naslov {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.apartmants .apartmants-container .best_apartmants {
+  width: 1,764px;
+  height: 732px;
+  background-color: yellow;
+  margin-bottom: 60px;
+}
+
+.service {
+  height: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service img {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+}
+
+.service .service_background {
+  width: calc( 100% - 620px);
+  height: 355px;
+}
+
+.service .service_maid {
+  height: 620px;
+  width: 620px;
+  right: 0;
+}
+
+.service .service_align {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.service .service_align .about_us-container {
+  color: #fff;
+}
+
+.service .service_align .about_us-container .naslov {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: 2px;
+  margin-top: 44px;
+  margin-bottom: 10px;
+}
+
+.service .service_align .about_us-container .podnaslov {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+.service .service_align .about_us-container .paragraph {
+  width: 674px;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 31px;
+}
+
+.service .service_align .about_us-container .learn_more-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  color: #9B6333;
+  text-decoration: none;
+}
+
+.service .service_align .about_us-container .learn_more-link .learn_more-arrow {
+  margin-left: 19px;
+  margin-top: 5.6px;
+}
+
+.service .service_align .feature_cards {
+  margin-top: 74px;
+}
+
+.service .service_align .feature_cards .card {
+  width: 254px;
+  min-height: 193px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 39px;
+}
+
+.service .service_align .feature_cards .card img {
+  z-index: 1;
+  position: relative;
+}
+
+.service .service_align .feature_cards .card .card_body {
+  background: #F0ECE7;
+  padding: 11px 14px 21px 15px;
+  min-height: 135px;
+  margin-top: 5px;
+}
+
+.service .service_align .feature_cards .card .card_body h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #383B37;
+}
+
+.service .service_align .feature_cards .card .card_body .line {
+  width: 100px;
+  height: 1px;
+  background-color: #9B6333;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.service .service_align .feature_cards .card .card_body p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+}
+
+.news {
+  height: 500px;
+}
+
+.reviews {
+  height: 500px;
+}
+
+.footer {
+  height: 320px;
+  color: #fff;
+}
+
+.footer .footer-1 {
+  height: 275px;
+  background: #272525;
+}
+
+.footer .footer-2 {
+  height: 45px;
+  background: #1D1D1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-2 .footer-2_align {
+  margin: auto;
+  width: 70%;
+}
+
+.footer .footer-2 .footer-2_align p {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.footer .footer-2 .footer-2_align .footer-2_left {
+  display: inline-block;
+}
+
+.footer .footer-2 .footer-2_align .footer-2_right {
+  float: right;
+}
+
+.footer .footer-2 .footer-2_align .footer-2_right p {
+  font-weight: bold;
+  margin-left: 38px;
+}
+
+.footer .footer-2 .footer-2_align .footer-2_right p:last-child {
+  font-weight: normal;
+  color: #D0D0D0;
+  margin-left: 44px;
 }
 

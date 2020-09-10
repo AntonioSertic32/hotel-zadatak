@@ -4,7 +4,9 @@
     <title>{% block page_title %}{% endblock %}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+     -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap' rel='stylesheet' type='text/css'>
     {% block headScripts %}{% endblock %}
@@ -13,9 +15,15 @@
 
     {% block header %}{% endblock %}
 
-    {% block section_one %}{% endblock %}
+    {% block home %}{% endblock %}
 
-    {% block section_two %}{% endblock %}
+    {% block apartmants %}{% endblock %}
+
+    {% block service %}{% endblock %}
+
+    {% block news %}{% endblock %}
+
+    {% block reviews %}{% endblock %}
 
     {% block footer %}{% endblock %}
 
