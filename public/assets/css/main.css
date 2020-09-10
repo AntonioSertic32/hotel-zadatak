@@ -7,8 +7,6 @@
   font-style: normal;
 }
 
-/* Navbar */
-
 nav {
   width: 100%;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -17,7 +15,7 @@ nav {
 
 .navigation-1 {
   height: 55px;
-  background: #F0ECE7;
+  background: #f0ece7;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -458,21 +456,149 @@ nav {
 }
 
 .news {
-  height: 500px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.news .news_align {
+  margin: auto;
+  width: 70%;
+}
+
+.news .news_align .naslov {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: 2px;
+  color: #383B37;
+  margin-bottom: 30px;
+}
+
+.news .news_align .slider {
+  text-align: center;
+  background-color: yellow;
+  width: 100%;
+  height: 502px;
+  margin-bottom: 60px;
+}
+
+.news img {
+  position: absolute;
+  width: 940px;
+  height: 450px;
+  z-index: -1;
+}
+
+.news .booking {
+  margin: auto;
+  width: 70%;
+  height: 450px;
+}
+
+.news .booking .card {
+  width: 800px;
+  height: 351px;
+  float: right;
+  background: #fff;
+  margin-top: 49px;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 44px 60px;
+}
+
+.news .booking .card .naslov {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: 2px;
+  color: #383B37;
+  margin-bottom: 30px;
+}
+
+.news .booking .card .paragraph {
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+  margin-bottom: 40px;
+}
+
+.news .booking .card .book_now {
+  width: 178px;
+  height: 59px;
+  background: #9B6333;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+          box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.news .booking .card .book_now:hover {
+  cursor: pointer;
 }
 
 .reviews {
-  height: 500px;
+  margin: 60px auto;
+  width: 70%;
+}
+
+.reviews .naslov {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: 2px;
+  color: #383B37;
+  margin-bottom: 36px;
+}
+
+.reviews .slider {
+  height: 283px;
+  background-color: yellow;
 }
 
 .footer {
-  height: 320px;
   color: #fff;
+  background: #272525;
 }
 
 .footer .footer-1 {
   height: 275px;
-  background: #272525;
+  width: 70%;
+  margin: auto;
+  padding: 48px 0 31px 0;
+}
+
+.footer .footer-1 .block-1,
+.footer .footer-1 .block-2,
+.footer .footer-1 .block-3,
+.footer .footer-1 .block-4 {
+  height: 196px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer .footer-1 .block-1,
+.footer .footer-1 .block-2 {
+  width: 30%;
+}
+
+.footer .footer-1 .block-3 {
+  width: 25%;
+}
+
+.footer .footer-1 .block-4 {
+  width: 15%;
 }
 
 .footer .footer-2 {
