@@ -1,2 +1,59 @@
-<!-- TWIG product page -->
-<!-- https://twig.symfony.com/doc/3.x/ -->
+{% extends 'main_layout.html.twig' %}
+
+{% block header %}
+    <div>
+        <nav class="navigation-1">
+            <div class="navigation-1_align">
+                <div class="navigation-1_left">
+                    <img class="location_image" src="images/location.png" alt="">
+                    <p class="location">Location</p>
+                    <img class="mail_image" src="images/mail.png" alt="">
+                    <p class="email">Mail us</p>
+                    <img class="key_image" src="images/key.png" alt="">
+                    <p class="login">Login</p>
+                </div>
+
+                <div class="navigation-1_right">
+                    <img class="search_image" src="images/search.png" alt="">
+                    <p><span>DE</span><span>EN</span></p>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navigation-2">
+            <div class="navigation-2_align">
+                <div class="navigation-2_left">
+                    <h3>Hotel</h3>
+                </div>
+
+                <div class="navigation-2_middle">
+                    <ul>
+                        <li>
+                            <a>Home</a>
+                        </li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                        <li>
+                            <a>Rooms</a>
+                        </li>
+                        <li>
+                            <a>Services</a>
+                        </li>
+                        <li>
+                            <a>Blog</a>
+                        </li>
+                        <li>
+                            <a>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navigation-2_right">
+                    
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+{% endblock %}
