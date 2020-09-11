@@ -95,7 +95,20 @@
             <h3 class="naslov">Best Apartments</h3>
 
             <div class="best_apartmants">
-            
+                {% for product in products %}
+                    <div class="card">
+                        <a href="room/{{product.slug}}">
+                            <img class="room_image" src={{ product.images[0].url }} alt="room">
+                            <div class="card_body">
+                                <div class="name_and_price">
+                                    <p class="room_name">{{ product.title }}</p>
+                                    <p class="room_price">{{ product.formatted_price }}</p>
+                                </div>
+                                <a href="#" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                            </div>
+                        </a>
+                    </div>
+			    {% endfor %}
             </div>
         </div>
     </div>
@@ -184,23 +197,23 @@
                     <img class="icon" src="images/instagram.png" alt="">
                 </div>
             </div><div class="block-2">
-                <p>Address</p>
-                <p>London</p>
-                <p>Main street 1 London, CA 70413</p>
-                <p>Open: 9:30AM 5:30PM</p>
-                <p>New York</p>
-                <p>Great street Broadway, NT 10013</p>
-                <p>Open: 8:30AM 4:30PM</p>
+                <p class="naslov">Address</p>
+                <p class="city">London</p>
+                <p class="address">Main street 1 London, CA 70413</p>
+                <p class="opening">Open: 9:30AM 5:30PM</p>
+                <p class="city">New York</p>
+                <p class="address">Great street Broadway, NT 10013</p>
+                <p class="opening">Open: 8:30AM 4:30PM</p>
             </div><div class="block-3">
-                <p>Cotact us</p>
-                <p>+44 (800) 456-78-91</p>
-                <p>hotel.london@mail.com</p>
-                <p>+1 (810) 456-78-91</p>
-                <p>hotel.ny@mail.com</p>
+                <p class="naslov">Cotact us</p>
+                <p class="number">+44 (800) 456-78-91</p>
+                <p class="email">hotel.london@mail.com</p>
+                <p class="number">+1 (810) 456-78-91</p>
+                <p class="email">hotel.ny@mail.com</p>
             </div><div class="block-4">
-                <p>Stay in touch</p>
-                <input type="text" placeholder="Your email">
-                <button>Subscribe</button>
+                <p class="naslov">Stay in touch</p>
+                <input class="input-email" type="text" placeholder="Your email">
+                <button class="subscribe">Subscribe</button>
             </div>
         </div>
         <div class="footer-2">

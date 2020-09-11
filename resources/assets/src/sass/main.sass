@@ -190,7 +190,7 @@ nav
   height: 1233px
   color: #383B37
   margin: auto
-  width: 70%
+  width: 75%
   padding-top: 60px
 
   .apartmants-container
@@ -266,10 +266,50 @@ nav
       margin-bottom: 30px
 
     .best_apartmants
-      width: 1,764px
-      height: 732px
-      background-color: yellow
       margin-bottom: 60px
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-column-gap: 40px
+      grid-row-gap: 30px
+
+      .card
+        width: 321px
+        height: 351px
+        background: #F2F2F2
+
+        .room_image
+          width: 100%
+
+        .card_body
+          padding: 26px 10px 34px 10px
+
+          .name_and_price
+            color: #383B37
+
+            .room_name
+              font-weight: bold
+              font-size: 20px
+              line-height: 25px
+              display: inline-block
+              margin-top: 4px
+              margin-bottom: 6px
+
+            .room_price
+              display: inline-block
+              font-weight: bold
+              font-size: 30px
+              line-height: 31px
+              float: right
+              
+          .view_details
+            font-weight: bold
+            font-size: 16px
+            line-height: 23px
+            color: #9B6333
+            text-decoration: none
+            
+            img
+              margin-left: 18.6px
 
 .service
   height: 620px
@@ -480,12 +520,119 @@ nav
     
     .block-1, .block-2
       width: 30%
+      
+    .block-1
+
+      h4
+        font-family: Playfair Display
+        font-weight: 900
+        font-size: 36px
+        line-height: 48px
+        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25)
+        margin-bottom: 10px
+      
+      p
+        font-size: 20px
+        line-height: 23px
+        margin-bottom: 67px
+        width: 198px
+
+      .follow_us-container
+
+        .follow_us
+          font-weight: bold
+          font-size: 20px
+          line-height: 25px
+          display: inline-block
+          margin-right: 27px
+          margin-bottom: 0
+
+        .icon
+          width: 22px
+          height: 22px
+          display: inline-block
+          filter: invert(100%)
+          margin-right: 15px
     
+    .block-2
+
+      .naslov
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 15px
+
+      .city
+        font-size: 16px
+        line-height: 25px
+        color: #D0D0D0
+
+      .address, .opening
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        
+      .opening:not(:last-child)
+        margin-bottom: 10px
+
     .block-3
       width: 25%
 
+      .naslov
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 41px
+
+      .number, .email
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+
+      .email:not(:last-child)
+        margin-bottom: 35px
+
     .block-4
       width: 15%
+
+      .naslov
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 23px
+
+      .input-email
+        font-weight: normal
+        font-size: 16px
+        line-height: 25px
+        color: #D0D0D0
+        width: 200px
+        background: none
+        border: none
+        border-bottom: 1px solid #C4C4C4
+        outline: 0
+        margin-bottom: 15px
+
+      .subscribe
+        float: right
+        width: 123px
+        height: 30px
+        background: #383B37
+        box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2)
+        border-radius: 30px
+        border: none
+        outline: 0
+
+        color: #fff
+        font-weight: bold
+        font-size: 12px
+        line-height: 23px
+        text-align: center
+        letter-spacing: 2px
+        text-transform: uppercase
+
+        &:hover
+          cursor: pointer
 
   .footer-2
     height: 45px

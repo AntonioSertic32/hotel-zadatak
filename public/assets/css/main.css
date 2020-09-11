@@ -249,7 +249,7 @@ nav {
   height: 1233px;
   color: #383B37;
   margin: auto;
-  width: 70%;
+  width: 75%;
   padding-top: 60px;
 }
 
@@ -334,10 +334,58 @@ nav {
 }
 
 .apartmants .apartmants-container .best_apartmants {
-  width: 1,764px;
-  height: 732px;
-  background-color: yellow;
   margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+}
+
+.apartmants .apartmants-container .best_apartmants .card {
+  width: 321px;
+  height: 351px;
+  background: #F2F2F2;
+}
+
+.apartmants .apartmants-container .best_apartmants .card .room_image {
+  width: 100%;
+}
+
+.apartmants .apartmants-container .best_apartmants .card .card_body {
+  padding: 26px 10px 34px 10px;
+}
+
+.apartmants .apartmants-container .best_apartmants .card .card_body .name_and_price {
+  color: #383B37;
+}
+
+.apartmants .apartmants-container .best_apartmants .card .card_body .name_and_price .room_name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.apartmants .apartmants-container .best_apartmants .card .card_body .name_and_price .room_price {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 31px;
+  float: right;
+}
+
+.apartmants .apartmants-container .best_apartmants .card .card_body .view_details {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  color: #9B6333;
+  text-decoration: none;
+}
+
+.apartmants .apartmants-container .best_apartmants .card .card_body .view_details img {
+  margin-left: 18.6px;
 }
 
 .service {
@@ -593,12 +641,131 @@ nav {
   width: 30%;
 }
 
+.footer .footer-1 .block-1 h4 {
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 48px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+.footer .footer-1 .block-1 p {
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 67px;
+  width: 198px;
+}
+
+.footer .footer-1 .block-1 .follow_us-container .follow_us {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-block;
+  margin-right: 27px;
+  margin-bottom: 0;
+}
+
+.footer .footer-1 .block-1 .follow_us-container .icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  margin-right: 15px;
+}
+
+.footer .footer-1 .block-2 .naslov {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-1 .block-2 .city {
+  font-size: 16px;
+  line-height: 25px;
+  color: #D0D0D0;
+}
+
+.footer .footer-1 .block-2 .address,
+.footer .footer-1 .block-2 .opening {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.footer .footer-1 .block-2 .opening:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .footer .footer-1 .block-3 {
   width: 25%;
 }
 
+.footer .footer-1 .block-3 .naslov {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 41px;
+}
+
+.footer .footer-1 .block-3 .number,
+.footer .footer-1 .block-3 .email {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.footer .footer-1 .block-3 .email:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 .footer .footer-1 .block-4 {
   width: 15%;
+}
+
+.footer .footer-1 .block-4 .naslov {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+
+.footer .footer-1 .block-4 .input-email {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #D0D0D0;
+  width: 200px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #C4C4C4;
+  outline: 0;
+  margin-bottom: 15px;
+}
+
+.footer .footer-1 .block-4 .subscribe {
+  float: right;
+  width: 123px;
+  height: 30px;
+  background: #383B37;
+  -webkit-box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+          box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+  border-radius: 30px;
+  border: none;
+  outline: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer .footer-1 .block-4 .subscribe:hover {
+  cursor: pointer;
 }
 
 .footer .footer-2 {
