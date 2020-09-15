@@ -105,6 +105,27 @@ nav
 
     .navigation-2_right
       width: 20%
+      text-align: right
+      
+      button
+        width: 123px
+        height: 30px
+        background: #9B6333
+        box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2)
+        border-radius: 30px
+
+        font-weight: bold
+        font-size: 12px
+        line-height: 23px
+        text-align: center
+        letter-spacing: 2px
+        text-transform: uppercase
+        border: none
+        outline: none
+        color: #fff
+
+        &:hover
+          cursor: pointer
     
     h3
       font-family: 'Playfair Display', serif
@@ -197,14 +218,73 @@ nav
         filter: invert(100%)
         margin-right: 34px
 
+    .arrow_container
+      position: absolute
+      top: 668px
+      left: 340px
+
+      .buttonLeft
+        background: none
+        border: none
+        outline: none
+
+        &:hover
+          cursor: pointer
+          
+        .arrow
+          width: 17.5
+          height: 29.7
+
     .home-slider
-      width: 1000px
-      height: 351px
-      background-color: yellow
       position: absolute
       top: 508px
       left: 400px
-      
+      display: flex
+      flex-direction: row
+
+      .card
+        width: 441px
+        height: 351px
+        background-color: #fff
+        
+        .room_image
+          width: 100%
+          height: 233px
+
+        .card_body
+          padding: 30px
+
+          .name_and_price
+            color: #383B37
+
+            .room_name
+              font-weight: bold
+              font-size: 20px
+              line-height: 25px
+              display: inline-block
+              margin-bottom: 10px
+
+            .room_price
+              display: inline-block
+              font-weight: bold
+              font-size: 30px
+              line-height: 31px
+              float: right
+              margin-top: 13px
+              
+          .view_details
+            font-weight: bold
+            font-size: 16px
+            line-height: 23px
+            color: #9B6333
+            text-decoration: none
+            
+            img
+              margin-left: 18.6px
+
+      .card:not(:last-child)
+        margin-right: 40px
+
 .apartmants
   height: 1233px
   color: #383B37
@@ -687,3 +767,383 @@ nav
           font-weight: normal
           color: #D0D0D0
           margin-left: 44px
+
+.room
+  margin: auto
+  width: 70%
+  color: 
+
+  .slider
+    height: 694px
+    margin-bottom: 17px
+    background-color: yellow
+
+  .podnaslov
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+
+  .left
+    width: 60%
+    display: inline-block
+    padding-right: 5%
+
+    .naslov
+      font-family: Playfair Display
+      font-weight: bold
+      font-size: 42px
+      line-height: 56px
+      letter-spacing: 2px
+      margin-top: 13px
+      margin-bottom: 27px
+
+    .info
+      margin-bottom: 30px
+      display: flex
+      justify-content: space-between
+
+      div
+        display: flex
+        align-items: center
+
+        p 
+          font-weight: bold
+          font-size: 20px
+          line-height: 25px
+          display: inline-block
+
+        img 
+          height: 48px
+          margin-right: 35px
+
+    .description, .services p, .hotel_rules p
+      font-size: 16px
+      line-height: 23px
+    
+    .description
+      border-top: 1px solid #C4C4C4
+      border-bottom: 1px solid #C4C4C4
+      padding: 30px 0
+
+    .services-podnaslov, .hotel_rules-podnaslov
+      margin-top: 30px
+      margin-bottom: 15px
+
+    .services
+      border: 1px solid #C4C4C4
+      padding: 26px 0 26px 50px
+      
+    .row-1, .row-2
+      display: flex
+      justify-content: space-around
+
+      p
+        width: 25%
+
+        i 
+          margin-right: 13px
+
+    .row-1
+      margin-bottom: 30px
+
+  .right
+    width: 40%
+    display: inline-block
+    vertical-align: top
+
+    .booking-container
+      min-width: 437px
+      min-height: 447px
+      background: #F0ECE7
+      padding: 30px 27px
+
+      .booking
+        font-weight: bold
+        font-size: 36px
+        line-height: 41px
+      
+      .price
+        font-weight: bold
+        font-size: 30px
+        line-height: 31px
+        color: #9B6333
+        margin: 10px 0 20px 6px
+
+      .podnaslov
+        margin-bottom: 10px
+
+      .date-container, .date-container-2
+        display: inline-block
+        margin-bottom: 26px
+
+        .input-icon
+          width: 48px
+          height: 40px
+          background: #F0F0F0
+          border: 1px solid #D0D0D0
+          border-radius: 4px 0px 0px 4px
+          display: inline-block
+          padding: 10px 14px
+          vertical-align: top
+
+          img
+            width: 18px
+            height: 18px
+
+        .input-icon-adults, .input-icon-children
+          padding: 8px 14px
+
+          img
+            width: 18px
+            height: 23px
+
+        input
+          width: 160px
+          height: 40px
+          background: #FFFFFF
+          border: 1px solid #D0D0D0
+          border-left: 0
+          border-radius: 0px 4px 4px 0px
+          text-align: center
+          vertical-align: top
+
+          font-size: 16px
+          line-height: 18px
+          color: #4E4C4D
+
+        //input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input::-webkit-calendar-picker-indicator 
+        //  -webkit-appearance: none
+        //  display: none
+        //  margin: 0
+
+      .date-container-2
+        float: right
+
+      .check
+        margin-top: 23px
+        width: 100%
+        display: flex
+        justify-content: center
+
+        button
+          width: 275px
+          height: 59px
+          background: #9B6333
+          box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2)
+          border-radius: 30px
+          border: none
+          outline: none
+
+          font-weight: bold
+          font-size: 16px
+          line-height: 23px
+          text-align: center
+          letter-spacing: 2px
+          text-transform: uppercase
+          color: #FFFFFF
+          
+          &:hover
+            cursor: pointer
+    
+    .naslov
+      font-weight: bold
+      font-size: 36px
+      line-height: 41px
+      margin-top: 60px
+      margin-bottom: 30px
+
+    .other_rooms
+      height: 196px
+      background-color: red
+
+  .comments
+
+    .naslov
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: #383B37
+      margin-top: 10px
+      margin-bottom: 15px
+
+    .actual_comments
+      height: 443px
+      width: 70%
+      margin-bottom: 30px
+
+      .comment_container
+
+        .comment_creator
+          height: 80px
+
+          img
+            width: 80px
+            height: 80px
+            border-radius: 50% 
+            object-fit: cover
+            display: inline-block
+            margin-right: 10px
+
+          .comment_creator-info
+            display: inline-block
+            vertical-align: top
+            margin-top: 15px
+
+            .name
+              font-weight: bold
+              font-size: 20px
+              line-height: 25px
+              color: #383B37
+
+            .date
+              font-size: 16px
+              line-height: 23px
+              color: #B2B2B2
+
+          .comment_reply
+            display: inline-block
+            vertical-align: top
+            margin-top: 10px
+            float: right
+
+            img 
+              width: 18px
+              height: 15px
+              display: inline-block
+              margin-right: 8px
+
+            p 
+              display: inline-block
+              font-family: Lato
+              font-size: 16px
+              line-height: 23px
+              color: #383B37
+
+        .commment_text-replyed_comments
+          display: flex
+          margin-top: 8px
+          width: 80%
+          flex-wrap: wrap
+          flex-direction: column
+          align-content: flex-end
+          margin-left: auto
+          margin-right: 0
+
+          .comment_text
+            
+            align-items: flex-start
+            
+            p
+              font-size: 16px
+              line-height: 23px
+              color: #383B37
+              
+          .replyed_comments
+            width: 80%
+            align-items: flex-start
+            margin-top: 30px
+            .replyed_comments_creator
+
+              .replyed_comment_creator-info
+
+                .name
+
+                .date
+
+
+    .input-name, .input-email
+      display: inline-block
+      width: 45%
+      margin-bottom: 10px
+      
+      input
+        width: 100%
+        height: 50px
+
+        border: 1px solid #CCCCCC
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08)
+
+        font-family: Lato
+        font-size: 16px
+        line-height: 23px
+        color: #383B37
+
+        padding-left: 20px
+
+      p 
+        padding-left: 20px
+        margin-bottom: 5px
+        font-family: Lato
+        font-size: 16px
+        line-height: 23px
+        color: #383B37
+
+    .input-email
+      float: right
+
+    .input-comment
+
+      p
+        padding-left: 20px
+        margin-bottom: 5px
+        width: 100%
+
+      p, span
+        font-family: Lato
+        font-size: 16px
+        line-height: 23px
+        color: #383B37
+
+      span
+        float: right
+
+    textarea
+      width: 100%
+      height: 150px
+      resize: none
+      border: 1px solid #CCCCCC
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08)
+      margin-bottom: 15px
+      padding: 15px 20px
+
+      font-family: Lato
+      font-size: 16px
+      line-height: 23px
+      color: #383B37
+
+    .remember_me-container
+      display: flex
+      align-items: center
+      margin-bottom: 24px
+
+      input
+        width: 24px
+        height: 24px
+        margin-right: 10px
+
+      .remember_me
+        font-size: 16px
+        line-height: 25px
+        color: #000000
+
+    button
+      width: 167px
+      height: 59px
+      background: #383B37
+      box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2)
+      border-radius: 30px
+      outline: none
+      border: none
+
+      font-weight: bold
+      font-size: 16px
+      line-height: 23px
+      text-align: center
+      letter-spacing: 2px
+      text-transform: uppercase
+      color: #FFFFFF
+
+      margin-bottom: 60px
+
+      &:hover
+        cursor: pointer

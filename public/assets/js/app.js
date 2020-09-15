@@ -13595,26 +13595,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-application', __webpack_require__("./resources/assets/src/js/components/app.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-application", __webpack_require__("./resources/assets/src/js/components/app.vue"));
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-container', __webpack_require__("./resources/assets/src/js/components/container.vue"));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-header', __webpack_require__("./resources/assets/src/js/components/header.vue"));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-footer', __webpack_require__("./resources/assets/src/js/components/footer.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-container", __webpack_require__("./resources/assets/src/js/components/container.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-header", __webpack_require__("./resources/assets/src/js/components/header.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-footer", __webpack_require__("./resources/assets/src/js/components/footer.vue"));
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-card', __webpack_require__("./resources/assets/src/js/components/card/card.vue"));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-card-header', __webpack_require__("./resources/assets/src/js/components/card/card-header.vue"));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-card-footer', __webpack_require__("./resources/assets/src/js/components/card/card-footer.vue"));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-card-body', __webpack_require__("./resources/assets/src/js/components/card/card-body.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-card", __webpack_require__("./resources/assets/src/js/components/card/card.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-card-header", __webpack_require__("./resources/assets/src/js/components/card/card-header.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-card-footer", __webpack_require__("./resources/assets/src/js/components/card/card-footer.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-card-body", __webpack_require__("./resources/assets/src/js/components/card/card-body.vue"));
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('v-btn', __webpack_require__("./resources/assets/src/js/components/button.vue"));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component("v-btn", __webpack_require__("./resources/assets/src/js/components/button.vue"));
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$window = window;
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-    el: '#app'
+  el: "#app"
 });
 
 window.vapp = app;
+
+$(".buttonLeft").on("click", function () {
+  var cardOne = $(".home-slider .card:first");
+
+  setTimeout(function () {
+    cardOne.detach().appendTo(".home-slider");
+  }, 1000);
+
+  $(".home-slider").css({ position: "relative" }).stop(true).animate({ right: 480 }, 1000, function () {
+    $(".home-slider").css({ right: 0 });
+  });
+});
 
 /***/ }),
 

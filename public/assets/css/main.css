@@ -144,6 +144,29 @@ nav {
 
 .navigation-2 .navigation-2_align .navigation-2_right {
   width: 20%;
+  text-align: right;
+}
+
+.navigation-2 .navigation-2_align .navigation-2_right button {
+  width: 123px;
+  height: 30px;
+  background: #9B6333;
+  -webkit-box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+          box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.navigation-2 .navigation-2_align .navigation-2_right button:hover {
+  cursor: pointer;
 }
 
 .navigation-2 .navigation-2_align h3 {
@@ -255,13 +278,90 @@ nav {
   margin-right: 34px;
 }
 
+.home .home-container .arrow_container {
+  position: absolute;
+  top: 668px;
+  left: 340px;
+}
+
+.home .home-container .arrow_container .buttonLeft {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.home .home-container .arrow_container .buttonLeft:hover {
+  cursor: pointer;
+}
+
+.home .home-container .arrow_container .buttonLeft .arrow {
+  width: 17.5;
+  height: 29.7;
+}
+
 .home .home-container .home-slider {
-  width: 1000px;
-  height: 351px;
-  background-color: yellow;
   position: absolute;
   top: 508px;
   left: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home .home-container .home-slider .card {
+  width: 441px;
+  height: 351px;
+  background-color: #fff;
+}
+
+.home .home-container .home-slider .card .room_image {
+  width: 100%;
+  height: 233px;
+}
+
+.home .home-container .home-slider .card .card_body {
+  padding: 30px;
+}
+
+.home .home-container .home-slider .card .card_body .name_and_price {
+  color: #383B37;
+}
+
+.home .home-container .home-slider .card .card_body .name_and_price .room_name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.home .home-container .home-slider .card .card_body .name_and_price .room_price {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 31px;
+  float: right;
+  margin-top: 13px;
+}
+
+.home .home-container .home-slider .card .card_body .view_details {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  color: #9B6333;
+  text-decoration: none;
+}
+
+.home .home-container .home-slider .card .card_body .view_details img {
+  margin-left: 18.6px;
+}
+
+.home .home-container .home-slider .card:not(:last-child) {
+  margin-right: 40px;
 }
 
 .apartmants {
@@ -830,5 +930,472 @@ nav {
   font-weight: normal;
   color: #D0D0D0;
   margin-left: 44px;
+}
+
+.room {
+  margin: auto;
+  width: 70%;
+}
+
+.room .slider {
+  height: 694px;
+  margin-bottom: 17px;
+  background-color: yellow;
+}
+
+.room .podnaslov {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.room .left {
+  width: 60%;
+  display: inline-block;
+  padding-right: 5%;
+}
+
+.room .left .naslov {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 56px;
+  letter-spacing: 2px;
+  margin-top: 13px;
+  margin-bottom: 27px;
+}
+
+.room .left .info {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.room .left .info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room .left .info div p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-block;
+}
+
+.room .left .info div img {
+  height: 48px;
+  margin-right: 35px;
+}
+
+.room .left .description,
+.room .left .services p,
+.room .left .hotel_rules p {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.room .left .description {
+  border-top: 1px solid #C4C4C4;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 30px 0;
+}
+
+.room .left .services-podnaslov,
+.room .left .hotel_rules-podnaslov {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.room .left .services {
+  border: 1px solid #C4C4C4;
+  padding: 26px 0 26px 50px;
+}
+
+.room .left .row-1,
+.room .left .row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.room .left .row-1 p,
+.room .left .row-2 p {
+  width: 25%;
+}
+
+.room .left .row-1 p i,
+.room .left .row-2 p i {
+  margin-right: 13px;
+}
+
+.room .left .row-1 {
+  margin-bottom: 30px;
+}
+
+.room .right {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.room .right .booking-container {
+  min-width: 437px;
+  min-height: 447px;
+  background: #F0ECE7;
+  padding: 30px 27px;
+}
+
+.room .right .booking-container .booking {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+.room .right .booking-container .price {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 31px;
+  color: #9B6333;
+  margin: 10px 0 20px 6px;
+}
+
+.room .right .booking-container .podnaslov {
+  margin-bottom: 10px;
+}
+
+.room .right .booking-container .date-container,
+.room .right .booking-container .date-container-2 {
+  display: inline-block;
+  margin-bottom: 26px;
+}
+
+.room .right .booking-container .date-container .input-icon,
+.room .right .booking-container .date-container-2 .input-icon {
+  width: 48px;
+  height: 40px;
+  background: #F0F0F0;
+  border: 1px solid #D0D0D0;
+  border-radius: 4px 0px 0px 4px;
+  display: inline-block;
+  padding: 10px 14px;
+  vertical-align: top;
+}
+
+.room .right .booking-container .date-container .input-icon img,
+.room .right .booking-container .date-container-2 .input-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.room .right .booking-container .date-container .input-icon-adults,
+.room .right .booking-container .date-container .input-icon-children,
+.room .right .booking-container .date-container-2 .input-icon-adults,
+.room .right .booking-container .date-container-2 .input-icon-children {
+  padding: 8px 14px;
+}
+
+.room .right .booking-container .date-container .input-icon-adults img,
+.room .right .booking-container .date-container .input-icon-children img,
+.room .right .booking-container .date-container-2 .input-icon-adults img,
+.room .right .booking-container .date-container-2 .input-icon-children img {
+  width: 18px;
+  height: 23px;
+}
+
+.room .right .booking-container .date-container input,
+.room .right .booking-container .date-container-2 input {
+  width: 160px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  border-left: 0;
+  border-radius: 0px 4px 4px 0px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
+  color: #4E4C4D;
+}
+
+.room .right .booking-container .date-container-2 {
+  float: right;
+}
+
+.room .right .booking-container .check {
+  margin-top: 23px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.room .right .booking-container .check button {
+  width: 275px;
+  height: 59px;
+  background: #9B6333;
+  -webkit-box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+          box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.room .right .booking-container .check button:hover {
+  cursor: pointer;
+}
+
+.room .right .naslov {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.room .right .other_rooms {
+  height: 196px;
+  background-color: red;
+}
+
+.room .comments .naslov {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #383B37;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.room .comments .actual_comments {
+  height: 443px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator {
+  height: 80px;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator .comment_creator-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator .comment_creator-info .name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #383B37;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator .comment_creator-info .date {
+  font-size: 16px;
+  line-height: 23px;
+  color: #B2B2B2;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator .comment_reply {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  float: right;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator .comment_reply img {
+  width: 18px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.room .comments .actual_comments .comment_container .comment_creator .comment_reply p {
+  display: inline-block;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+}
+
+.room .comments .actual_comments .comment_container .commment_text-replyed_comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.room .comments .actual_comments .comment_container .commment_text-replyed_comments .comment_text {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.room .comments .actual_comments .comment_container .commment_text-replyed_comments .comment_text p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+}
+
+.room .comments .actual_comments .comment_container .commment_text-replyed_comments .replyed_comments {
+  width: 80%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 30px;
+}
+
+.room .comments .input-name,
+.room .comments .input-email {
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.room .comments .input-name input,
+.room .comments .input-email input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #CCCCCC;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+  padding-left: 20px;
+}
+
+.room .comments .input-name p,
+.room .comments .input-email p {
+  padding-left: 20px;
+  margin-bottom: 5px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+}
+
+.room .comments .input-email {
+  float: right;
+}
+
+.room .comments .input-comment p {
+  padding-left: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.room .comments .input-comment p,
+.room .comments .input-comment span {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+}
+
+.room .comments .input-comment span {
+  float: right;
+}
+
+.room .comments textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border: 1px solid #CCCCCC;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 23px;
+  color: #383B37;
+}
+
+.room .comments .remember_me-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.room .comments .remember_me-container input {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.room .comments .remember_me-container .remember_me {
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.room .comments button {
+  width: 167px;
+  height: 59px;
+  background: #383B37;
+  -webkit-box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+          box-shadow: 0px 5px 10px rgba(56, 59, 55, 0.2);
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.room .comments button:hover {
+  cursor: pointer;
 }
 

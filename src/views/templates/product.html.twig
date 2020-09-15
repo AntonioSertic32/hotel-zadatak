@@ -50,10 +50,212 @@
                 </div>
 
                 <div class="navigation-2_right">
-                    
+                    <button>Book now</button>
                 </div>
                 
             </div>
         </nav>
+    </div>
+{% endblock %}
+
+{% block room %}
+    <div class="room">
+        <div class="slider">
+        
+        </div>
+
+        <div class="left">
+            <h3 class="naslov">{{ product.title }}</h3>
+            
+            <div class="info">
+                <div class="">
+                    <img src="images/adults.png" alt=""><p>{{ product.max_adults }} adults</p>
+                </div>
+                <div class="">
+                    <img src="images/children.png" alt=""><p>{{ product.max_children }} children</p>
+                </div>
+                <div class="">
+                    <img src="images/m2.png" alt=""><p>{{ product.squares }} m2</p>
+                </div> 
+            </div>
+
+            <p class="description">{{ product.description }}</p>
+
+            <h5 class="podnaslov services-podnaslov">Room services</h5>
+            <div class="services">
+                <div class="row-1">
+                    <p><i class="fa fa-check"></i>Accessories</p>
+                    <p><i class="fa fa-times"></i>Bar</p>
+                    <p><i class="fa fa-check"></i>Cleaning</p>
+                    <p><i class="fa fa-times"></i>Phone</p>
+                </div>
+                <div class="row-2">
+                    <p><i class="fa fa-check"></i>Restaurant</p>
+                    <p><i class="fa fa-check"></i>Spa_zone</p>
+                    <p><i class="fa fa-times"></i>Transport</p>
+                    <p><i class="fa fa-times"></i>Wifi</p>
+                </div>
+            </div>
+
+            <h5 class="podnaslov hotel_rules-podnaslov">Hotel rules</h5>
+            <div class="hotel_rules">
+                {% for rule in product.hotel_rules %}
+					<p>- {{ rule }}</p>
+				{% endfor %}
+            </div>
+            
+        </div><div class="right">
+            <div class="booking-container">
+                <h3 class="booking">Start booking</h3>
+                <p class="price">{{ product.formatted_price }}</p>
+
+                <p class="podnaslov">Dates</p>
+
+                <div class="date-container">
+                    <div class="input-icon">
+                        <img src="images/date.png" alt="">
+                    </div><input type="date" name="" id="">
+                </div><div class="date-container-2">
+                    <div class="input-icon">
+                        <img src="images/date.png" alt="">
+                    </div><input type="date" name="" id="">
+                </div>
+
+                <p class="podnaslov">Guests</p>
+
+                <div class="date-container">
+                    <div class="input-icon input-icon-adults">
+                        <img src="images/adults.png" alt="">
+                    </div><input type="number" name="" id="">
+                </div><div class="date-container-2">
+                    <div class="input-icon input-icon-children">
+                        <img src="images/children.png" alt="">
+                    </div><input type="number" name="" id="">
+                </div>
+                
+                <div class="check">
+                    <button>Check availability</button>
+                </div>
+            </div>
+
+            <h3 class="naslov">You may also like</h3>
+
+            <div class="other_rooms"></div>
+
+        </div>
+
+        <div class="comments">
+            <h5 class="naslov">Comments</h5>
+            <div class="actual_comments">
+                {% for comment in product.comments %}
+                    <div class="comment_container">
+                        <div class="comment_creator">
+                            <img src="..{{ comment.user.profile_image }}" alt=""><div class="comment_creator-info">
+                                <p class="name">{{ comment.user.name}}</p>
+                                <p class="date">28 Aug 2020, 11:16PM</p>
+                            </div>
+                            <div class="comment_reply">
+                                <img src="/images/reply.png"><p>Reply</p>
+                            </div>
+                        </div>
+
+                        <div class="commment_text-replyed_comments">
+                            <div class="comment_text">
+                                <p>{{ comment.comment }}</p>
+                            </div>
+
+                            {% if comment.replies is not empty %}
+                                {% for reply in comment.replies %}
+                                    <div class="replyed_comments">
+                                        <div class="comment_creator">
+                                            <img src="..{{ reply.user.profile_image }}" alt=""><div class="comment_creator-info">
+                                                <p class="name">{{ reply.user.name }}</p>
+                                                <p class="date">28 Aug 2020, 11:16PM</p>
+                                            </div>
+                                            <div class="comment_reply">
+                                                <img src="/images/reply.png"><p>Reply</p>
+                                            </div>
+                                        </div>
+                                        <div class="commment_text-replyed_comments">
+                                            <div class="comment_text">
+                                                <p>{{ reply.comment }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>   
+			    {% endfor %}
+            </div>
+
+            <h5 class="naslov">Leave a comment</h5>
+
+            <div class="input-name">
+                <p>Name</p>
+                <input type="text" name="" id="" placeholder="Your name">
+            </div><div class="input-email">
+                <p>Email</p>
+                <input type="email" name="" id="" placeholder="Your email">
+            </div>
+
+            <div class="input-comment">
+                <p>Comment <span>0/500</span></p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your comment"></textarea>
+            </div>
+
+            <div class="remember_me-container">
+                <input type="checkbox" name="" id=""><p class="remember_me">Save my name and email in this browser for the next time I comment.</p>
+            </div>
+
+            <button>Comment</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+        <div class="footer-1">
+            <div class="block-1">
+                <h4>Hotel</h4>
+                <p>Every day is a new day for relaxation.</p>
+                <div class="follow_us-container">
+                    <p class="follow_us">Follow us</p>
+                    <img class="icon" src="images/facebook.png" alt="">
+                    <img class="icon" src="images/instagram.png" alt="">
+                </div>
+            </div><div class="block-2">
+                <p class="naslov">Address</p>
+                <p class="city">London</p>
+                <p class="address">Main street 1 London, CA 70413</p>
+                <p class="opening">Open: 9:30AM 5:30PM</p>
+                <p class="city">New York</p>
+                <p class="address">Great street Broadway, NT 10013</p>
+                <p class="opening">Open: 8:30AM 4:30PM</p>
+            </div><div class="block-3">
+                <p class="naslov">Cotact us</p>
+                <p class="number">+44 (800) 456-78-91</p>
+                <p class="email">hotel.london@mail.com</p>
+                <p class="number">+1 (810) 456-78-91</p>
+                <p class="email">hotel.ny@mail.com</p>
+            </div><div class="block-4">
+                <p class="naslov">Stay in touch</p>
+                <input class="input-email" type="text" placeholder="Your email">
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="footer-2_align">
+                <div class="footer-2_left">
+                    <p>@2020, Frontend akademija</p>
+                </div>
+
+                <div class="footer-2_right">
+                    <p>Privacy Policy</p>
+                    <p>Site map</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
