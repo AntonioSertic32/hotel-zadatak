@@ -183,9 +183,39 @@
         <div class="news_align">
             <h3 class="naslov">Recent news</h3>
             <div class="slider">
+                <a class="button-left news-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt=""></a>
+                <a class="button-right news-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt=""></a>
+                <div class="slick-slider-2">
+                    {% for new in news %}
+                        <div class="news-card">
 
+                            <div class="news-card-header">
+                                <div class="promo-tag">
+                                    <div class="">
+                                        <img class="tag" src="images/tag.png" alt="tag"/>
+                                    </div>
+                                    
+                                    <div class="promo-info">
+                                        <h3 class="promo-text">Promo price!</h3>
+                                        <p class="promo-date">August 25-31</p>
+                                    </div>
+                                </div>
+                                <img class="news-image" src={{new.image}}/>
+                                
+                            </div>
+                            <div class="news-card-body">
+                                <p class="news-category">{{ new.category }}</p>
+                                <p class="news-title">{{ new.title }}</p>
+                                <p class="news-description">{{ new.description }}</p>
+                                <a class="news-learn_more">Learn more ></a>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
+        <div class="background"></div>
         <img src="images/pozadina_4.png" alt=""></img>
         <div class="booking">
             <div class="card">

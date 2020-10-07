@@ -6,4 +6,13 @@ $(document).ready(function() {
     arrows: false,
     nextArrow: $(".buttonLeft"),
   });
+
+  $(".slick-slider-2").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 700,
+    prevArrow: $(".news-button-left"),
+    nextArrow: $(".news-button-right"),
+  });
 });
