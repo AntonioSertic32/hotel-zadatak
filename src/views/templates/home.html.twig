@@ -79,20 +79,22 @@
             </div>
 
             <div class="home-slider">
-                {% for product in products %}
-                    <div class="card">
-                        <a href="room/{{product.slug}}">
-                            <img class="room_image" src={{ product.images[0].url }} alt="room">
-                            <div class="card_body">
-                                <div class="name_and_price">
-                                    <p class="room_name">{{ product.title }}</p>
-                                    <p class="room_price">{{ product.formatted_price }}</p>
+                <div class="slick-slider-1">
+                    {% for product in products %}
+                        <div class="card">
+                            <a href="room/{{product.slug}}">
+                                <img class="room_image" src={{ product.images[0].url }} alt="room">
+                                <div class="card_body">
+                                    <div class="name_and_price">
+                                        <p class="room_name">{{ product.title }}</p>
+                                        <p class="room_price">{{ product.formatted_price }}</p>
+                                    </div>
+                                    <a href="#" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
                                 </div>
-                                <a href="#" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
-                            </div>
-                        </a>
-                    </div>
-                {% endfor %}
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

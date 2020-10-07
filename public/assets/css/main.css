@@ -303,35 +303,33 @@ nav {
   position: absolute;
   top: 508px;
   left: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
-.home .home-container .home-slider .card {
+.home .home-container .home-slider .slick-slider-1 {
+  position: relative;
+}
+
+.home .home-container .home-slider .slick-slider-1 .card {
   width: 441px;
   height: 351px;
   background-color: #fff;
+  display: inline-block;
 }
 
-.home .home-container .home-slider .card .room_image {
+.home .home-container .home-slider .slick-slider-1 .card .room_image {
   width: 100%;
   height: 233px;
 }
 
-.home .home-container .home-slider .card .card_body {
+.home .home-container .home-slider .slick-slider-1 .card .card_body {
   padding: 30px;
 }
 
-.home .home-container .home-slider .card .card_body .name_and_price {
+.home .home-container .home-slider .slick-slider-1 .card .card_body .name_and_price {
   color: #383B37;
 }
 
-.home .home-container .home-slider .card .card_body .name_and_price .room_name {
+.home .home-container .home-slider .slick-slider-1 .card .card_body .name_and_price .room_name {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -339,7 +337,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.home .home-container .home-slider .card .card_body .name_and_price .room_price {
+.home .home-container .home-slider .slick-slider-1 .card .card_body .name_and_price .room_price {
   display: inline-block;
   font-weight: bold;
   font-size: 30px;
@@ -348,7 +346,7 @@ nav {
   margin-top: 13px;
 }
 
-.home .home-container .home-slider .card .card_body .view_details {
+.home .home-container .home-slider .slick-slider-1 .card .card_body .view_details {
   font-weight: bold;
   font-size: 16px;
   line-height: 23px;
@@ -356,11 +354,11 @@ nav {
   text-decoration: none;
 }
 
-.home .home-container .home-slider .card .card_body .view_details img {
+.home .home-container .home-slider .slick-slider-1 .card .card_body .view_details img {
   margin-left: 18.6px;
 }
 
-.home .home-container .home-slider .card:not(:last-child) {
+.home .home-container .home-slider .slick-slider-1 .card:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -931,6 +929,12 @@ nav {
   color: #D0D0D0;
   margin-left: 44px;
 }
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------------------ Druga stranica */
+
+/* ------------------------------------------------------------------------------------------------------ */
 
 .room {
   margin: auto;
