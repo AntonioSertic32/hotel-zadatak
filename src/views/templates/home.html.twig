@@ -230,9 +230,44 @@
 {% block reviews %}
     <div class="reviews">
         <h3 class="naslov">Guest reviews</h3>
-            <div class="slider">
+        <div class="slider">
+            <a class="button-left reviews-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt=""></a>
+            <a class="button-right reviews-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt=""></a>
+            <div class="slick-slider-3">
+                {% for review in reviews %}
+                    <div class="review-card">
+                        <div class="review-card-header">
+                            <img class="review-image" src={{ review.user.profile_image }}/><div class="info">
+                                <p class="review-user_name">{{ review.user.name }}</p>
+                                <p class="review-user_job">Copywriter</p>
+                            </div><div class="review-rating">
+                                <p class="review-rating-stars">
 
+                                    {% if review.rating == 1 %}
+                                        <img src="/images/full_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt="">
+                                    {% elseif review.rating == 2 %}
+                                        <img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt="">
+                                    {% elseif review.rating == 3 %}
+                                        <img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt="">
+                                    {% elseif review.rating == 4 %}
+                                        <img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/empty_star.png" alt="">
+                                    {% elseif review.rating == 5 %}
+                                        <img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt=""><img src="/images/full_star.png" alt="">
+                                    {% else %}
+                                        <img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt=""><img src="/images/empty_star.png" alt="">
+                                    {% endif %}
+                                
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="review-card-body">
+                            <div class="filler"></div><p class="review-comment">{{ review.comment }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
+        </div>
     </div>
 {% endblock %}
 
