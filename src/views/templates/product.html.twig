@@ -5,16 +5,16 @@
         <nav class="navigation-1">
             <div class="navigation-1_align">
                 <div class="navigation-1_left">
-                    <img class="location_image" src="/images/location.png" alt="">
+                    <img class="location_image" src="/images/location.png" alt="location icon">
                     <p class="location">Location</p>
-                    <img class="mail_image" src="/images/mail.png" alt="">
+                    <img class="mail_image" src="/images/mail.png" alt="mail icon">
                     <p class="email">Mail us</p>
-                    <img class="key_image" src="/images/key.png" alt="">
+                    <img class="key_image" src="/images/key.png" alt="key icon">
                     <p class="login">Login</p>
                 </div>
 
                 <div class="navigation-1_right">
-                    <img class="search_image" src="/images/search.png" alt="">
+                    <img class="search_image" src="/images/search.png" alt="search icon">
                     <p><span>DE</span><span>EN</span></p>
                 </div>
             </div>
@@ -65,18 +65,18 @@
             <div class="slider-for">
                 {% for image in product.images %}
                     <div class="item">
-                        <img src={{ image.url }}>
+                        <img src={{ image.url }} alt="room image">
                     </div>
                 {% endfor %}
             </div>
 
-            <a class="button-left room-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt=""></a>
-            <a class="button-right room-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt=""></a>
+            <a class="button-left room-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt="slider prev icon"></a>
+            <a class="button-right room-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt="slider next icon"></a>
             
             <div class="slider-nav">
                 {% for image in product.images %}
                     <div class="item">
-                        <img src={{ image.url }}>
+                        <img src={{ image.url }} alt="room image">
                     </div>
                 {% endfor %}
             </div>
@@ -84,23 +84,23 @@
         </div>
 
         <div class="left">
-            <h3 class="naslov">{{ product.title }}</h3>
+            <h3 class="title">{{ product.title }}</h3>
             
             <div class="info">
                 <div class="">
-                    <img src="/images/adults.png" alt=""><p>{{ product.max_adults }} adults</p>
+                    <img src="/images/adults.png" alt="adult icon"><p>{{ product.max_adults }} adults</p>
                 </div>
                 <div class="">
-                    <img src="/images/children.png" alt=""><p>{{ product.max_children }} children</p>
+                    <img src="/images/children.png" alt="children icon"><p>{{ product.max_children }} children</p>
                 </div>
                 <div class="">
-                    <img src="/images/m2.png" alt=""><p>{{ product.squares }} m2</p>
+                    <img src="/images/m2.png" alt="m2 icon"><p>{{ product.squares }} m2</p>
                 </div> 
             </div>
 
             <p class="description">{{ product.description }}</p>
 
-            <h5 class="podnaslov services-podnaslov">Room services</h5>
+            <h5 class="subtitle services-subtitle">Room services</h5>
             <div class="services">
                 <div class="row-1">
                     <p><i class="fa fa-check"></i>Accessories</p>
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <h5 class="podnaslov hotel_rules-podnaslov">Hotel rules</h5>
+            <h5 class="subtitle hotel_rules-subtitle">Hotel rules</h5>
             <div class="hotel_rules">
                 {% for rule in product.hotel_rules %}
 					<p>- {{ rule }}</p>
@@ -128,27 +128,27 @@
                 <h3 class="booking">Start booking</h3>
                 <p class="price">{{ product.formatted_price }}</p>
 
-                <p class="podnaslov">Dates</p>
+                <p class="subtitle">Dates</p>
 
                 <div class="date-container">
                     <div class="input-icon">
-                        <img src="/images/date.png" alt="">
+                        <img src="/images/date.png" alt="date icon">
                     </div><input type="date" name="" id="">
                 </div><div class="date-container-2">
                     <div class="input-icon">
-                        <img src="/images/date.png" alt="">
+                        <img src="/images/date.png" alt="date icon">
                     </div><input type="date" name="" id="">
                 </div>
 
-                <p class="podnaslov">Guests</p>
+                <p class="subtitle">Guests</p>
 
                 <div class="date-container">
                     <div class="input-icon input-icon-adults">
-                        <img src="/images/adults.png" alt="">
+                        <img src="/images/adults.png" alt="adult icon">
                     </div><input type="number" name="" id="">
                 </div><div class="date-container-2">
                     <div class="input-icon input-icon-children">
-                        <img src="/images/children.png" alt="">
+                        <img src="/images/children.png" alt="children icon">
                     </div><input type="number" name="" id="">
                 </div>
                 
@@ -157,19 +157,19 @@
                 </div>
             </div>
 
-            <h3 class="naslov">You may also like</h3>
+            <h3 class="title">You may also like</h3>
 
             <div class="other_rooms">
 
                 <div class="card">
                     <div class="card-header">
-                        <img src="/images/nature_room.png">
+                        <img src="/images/nature_room.png" alt="nature room image">
                     </div>
 
                     <div class="card-body">
                         <h3>Nature Room</h3>
 						<div class="room-info">
-							<a class="">Book now <img src="/images/learn_more-arrow.png"></a>
+							<a class="">Book now <img src="/images/learn_more-arrow.png" alt="arrow icon"></a>
 							<p>150.00kn</p>
 						</div>
                     </div>
@@ -177,13 +177,13 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <img src="/images/premium_room.png">
+                        <img src="/images/premium_room.png" alt="premium room image">
                     </div>
 
                     <div class="card-body">
                         <h3>Premium Room</h3>
 						<div class="room-info">
-							<a class="">Book now <img src="/images/learn_more-arrow.png"></a>
+							<a class="">Book now <img src="/images/learn_more-arrow.png" alt="arrow icon"></a>
 							<p>350.00kn</p>
 						</div>
                     </div>
@@ -194,18 +194,18 @@
         </div>
 
         <div class="comments">
-            <h5 class="naslov">Comments</h5>
+            <h5 class="title">Comments</h5>
             <div class="actual_comments">
                 {% for comment in product.comments %}
                     <div class="comment_container">
 
                         <div class="comment_creator">
-                            <img src="..{{ comment.user.profile_image }}" alt=""><div class="comment_creator-info">
+                            <img src="..{{ comment.user.profile_image }}" alt="user profile image"><div class="comment_creator-info">
                                 <p class="name">{{ comment.user.name}}</p>
                                 <p class="date">28 Aug 2020, 11:16PM</p>
                             </div>
                             <div class="comment_reply">
-                                <img src="/images/reply.png"><p>Reply</p>
+                                <img src="/images/reply.png" alt="reply icon"><p>Reply</p>
                             </div>
                         </div>
 
@@ -220,12 +220,12 @@
                                 {% for reply in comment.replies %}
                                     <div class="filler"></div><div class="replyed_comment">
                                         <div class="comment_creator">
-                                            <img src="..{{ reply.user.profile_image }}" alt=""><div class="comment_creator-info">
+                                            <img src="..{{ reply.user.profile_image }}" alt="user profile image"><div class="comment_creator-info">
                                                 <p class="name">{{ reply.user.name }}</p>
                                                 <p class="date">28 Aug 2020, 11:16PM</p>
                                             </div>
                                             <div class="comment_reply">
-                                                <img src="/images/reply.png"><p>Reply</p>
+                                                <img src="/images/reply.png" alt="reply icon"><p>Reply</p>
                                             </div>
                                         </div>
                                         <div class="comment_text">
@@ -242,23 +242,23 @@
 			    {% endfor %}
             </div>
 
-            <h5 class="naslov">Leave a comment</h5>
+            <h5 class="title">Leave a comment</h5>
 
             <div class="input-name">
                 <p>Name</p>
-                <input type="text" name="" id="" placeholder="Your name">
+                <input type="text" placeholder="Your name">
             </div><div class="input-email">
                 <p>Email</p>
-                <input type="email" name="" id="" placeholder="Your email">
+                <input type="email" placeholder="Your email">
             </div>
 
             <div class="input-comment">
                 <p>Comment <span>0/500</span></p>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your comment"></textarea>
+                <textarea cols="30" rows="10" placeholder="Your comment"></textarea>
             </div>
 
             <div class="remember_me-container">
-                <input type="checkbox" name="" id=""><p class="remember_me">Save my name and email in this browser for the next time I comment.</p>
+                <input type="checkbox"><p class="remember_me">Save my name and email in this browser for the next time I comment.</p>
             </div>
 
             <button>Comment</button>
@@ -274,11 +274,11 @@
                 <p>Every day is a new day for relaxation.</p>
                 <div class="follow_us-container">
                     <p class="follow_us">Follow us</p>
-                    <img class="icon" src="/images/facebook.png" alt="">
-                    <img class="icon" src="/images/instagram.png" alt="">
+                    <img class="icon" src="/images/facebook.png" alt="facebook icon">
+                    <img class="icon" src="/images/instagram.png" alt="instagram icon">
                 </div>
             </div><div class="block-2">
-                <p class="naslov">Address</p>
+                <p class="title">Address</p>
                 <p class="city">London</p>
                 <p class="address">Main street 1 London, CA 70413</p>
                 <p class="opening">Open: 9:30AM 5:30PM</p>
@@ -286,13 +286,13 @@
                 <p class="address">Great street Broadway, NT 10013</p>
                 <p class="opening">Open: 8:30AM 4:30PM</p>
             </div><div class="block-3">
-                <p class="naslov">Cotact us</p>
+                <p class="title">Cotact us</p>
                 <p class="number">+44 (800) 456-78-91</p>
                 <p class="email">hotel.london@mail.com</p>
                 <p class="number">+1 (810) 456-78-91</p>
                 <p class="email">hotel.ny@mail.com</p>
             </div><div class="block-4">
-                <p class="naslov">Stay in touch</p>
+                <p class="title">Stay in touch</p>
                 <input class="input-email" type="text" placeholder="Your email">
                 <button class="subscribe">Subscribe</button>
             </div>

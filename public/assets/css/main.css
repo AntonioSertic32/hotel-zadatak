@@ -204,7 +204,7 @@ nav {
   overflow: hidden;
 }
 
-.home .pozadina {
+.home .home_background {
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -220,7 +220,7 @@ nav {
   position: relative;
 }
 
-.home .home-container .naslov {
+.home .home-container .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -228,7 +228,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.home .home-container .podnaslov {
+.home .home-container .subtitle {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -381,7 +381,7 @@ nav {
   margin-bottom: 61px;
 }
 
-.apartmants .apartmants-container .about_us-container .naslov {
+.apartmants .apartmants-container .about_us-container .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -390,7 +390,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.apartmants .apartmants-container .about_us-container .podnaslov {
+.apartmants .apartmants-container .about_us-container .subtitle {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -444,7 +444,7 @@ nav {
   margin-bottom: 0;
 }
 
-.apartmants .apartmants-container .naslov {
+.apartmants .apartmants-container .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -541,7 +541,7 @@ nav {
   color: #fff;
 }
 
-.service .service_align .about_us-container .naslov {
+.service .service_align .about_us-container .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -551,7 +551,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.service .service_align .about_us-container .podnaslov {
+.service .service_align .about_us-container .subtitle {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -643,7 +643,7 @@ nav {
   width: 70%;
 }
 
-.news .news_align .naslov {
+.news .news_align .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -808,7 +808,7 @@ nav {
   padding: 44px 60px;
 }
 
-.news .booking .card .naslov {
+.news .booking .card .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -852,7 +852,7 @@ nav {
   width: 70%;
 }
 
-.reviews .naslov {
+.reviews .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -1061,7 +1061,7 @@ nav {
   margin-right: 15px;
 }
 
-.footer .footer-1 .block-2 .naslov {
+.footer .footer-1 .block-2 .title {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -1089,7 +1089,7 @@ nav {
   width: 25%;
 }
 
-.footer .footer-1 .block-3 .naslov {
+.footer .footer-1 .block-3 .title {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -1111,7 +1111,7 @@ nav {
   width: 15%;
 }
 
-.footer .footer-1 .block-4 .naslov {
+.footer .footer-1 .block-4 .title {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -1283,7 +1283,7 @@ nav {
   margin: 0 -60px;
 }
 
-.room .podnaslov {
+.room .subtitle {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -1295,7 +1295,7 @@ nav {
   padding-right: 5%;
 }
 
-.room .left .naslov {
+.room .left .title {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 42px;
@@ -1349,8 +1349,8 @@ nav {
   padding: 30px 0;
 }
 
-.room .left .services-podnaslov,
-.room .left .hotel_rules-podnaslov {
+.room .left .services-subtitle,
+.room .left .hotel_rules-subtitle {
   margin-top: 30px;
   margin-bottom: 15px;
 }
@@ -1410,7 +1410,7 @@ nav {
   margin: 10px 0 20px 6px;
 }
 
-.room .right .booking-container .podnaslov {
+.room .right .booking-container .subtitle {
   margin-bottom: 10px;
 }
 
@@ -1505,7 +1505,7 @@ nav {
   cursor: pointer;
 }
 
-.room .right .naslov {
+.room .right .title {
   font-weight: bold;
   font-size: 36px;
   line-height: 41px;
@@ -1581,7 +1581,7 @@ nav {
   color: #383B37;
 }
 
-.room .comments .naslov {
+.room .comments .title {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;

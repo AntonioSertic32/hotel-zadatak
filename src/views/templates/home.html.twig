@@ -5,16 +5,16 @@
         <nav class="navigation-1">
             <div class="navigation-1_align">
                 <div class="navigation-1_left">
-                    <img class="location_image" src="images/location.png" alt="">
+                    <img class="location_image" src="images/location.png" alt="location icon">
                     <p class="location">Location</p>
-                    <img class="mail_image" src="images/mail.png" alt="">
+                    <img class="mail_image" src="images/mail.png" alt="mail icon">
                     <p class="email">Mail us</p>
-                    <img class="key_image" src="images/key.png" alt="">
+                    <img class="key_image" src="images/key.png" alt="key icon">
                     <p class="login">Login</p>
                 </div>
 
                 <div class="navigation-1_right">
-                    <img class="search_image" src="images/search.png" alt="">
+                    <img class="search_image" src="images/search.png" alt="search icon">
                     <p><span>DE</span><span>EN</span></p>
                 </div>
             </div>
@@ -61,34 +61,34 @@
 {% block home %}
 <div>
     <div class="home">
-        <img class="pozadina" src="images/pozadina.png" alt="">
+        <img class="home_background" src="images/home_background.png" alt="home background">
         <div class="home-container">
-            <h3 class="naslov">Feel like home, but better.</h3>
-            <p class="podnaslov">World-famous. Deeply relaxing.</p>
+            <h3 class="title">Feel like home, but better.</h3>
+            <p class="subtitle">World-famous. Deeply relaxing.</p>
             <button class="learn_more">Learn more</button>
 
             <div class="follow_us-container">
                 <p class="follow_us">Follow us</p>
-                <img class="icon" src="images/facebook.png" alt="">
-                <img class="icon" src="images/instagram.png" alt="">
+                <img class="icon" src="images/facebook.png" alt="facebook icon">
+                <img class="icon" src="images/instagram.png" alt="instagram icon">
             </div>
 
             <div class="arrow_container">
                 <button class="buttonLeft">
-                    <img class="arrow" src="/images/arrow_back_white.png" alt="">
+                    <img class="arrow" src="/images/arrow_back_white.png" alt="arrow icon">
                 </button>
             </div>
 
             <div class="slick-slider-1">
                     {% for product in products %}
                         <div class="card">
-                            <img class="room_image" src={{ product.images[0].url }} alt="room">
+                            <img class="room_image" src={{ product.images[0].url }} alt="room image">
                             <div class="card_body">
                                 <div class="name_and_price">
                                     <p class="room_name">{{ product.title }}</p>
                                     <p class="room_price">{{ product.formatted_price }}</p>
                                 </div>
-                                <a href="room/{{product.slug}}" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                                <a href="room/{{product.slug}}" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png" alt="arrow icon"></img></a>
                             </div>
                         </div>
                     {% endfor %}
@@ -99,8 +99,8 @@
     <div class="apartmants">
         <div class="apartmants-container">
             <div class="about_us-container">
-                <h3 class="naslov">Comfort & Design to relax in Luxury Hotel</h3>
-                <p class="podnaslov">Every day is a new day for relaxation.</p>
+                <h3 class="title">Comfort & Design to relax in Luxury Hotel</h3>
+                <p class="subtitle">Every day is a new day for relaxation.</p>
                 <button class="about_us">About us</button>
             </div><div class="comment-container">
                 <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis gravida metus quis varius. Nullam sit amet fringilla velit, non pretium nibh. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque.</p>
@@ -108,18 +108,18 @@
                 <p class="comment_creator-title">General manager</p>
             </div>
 
-            <h3 class="naslov">Best Apartments</h3>
+            <h3 class="title">Best Apartments</h3>
 
             <div class="best_apartmants">
                 {% for product in products %}
                     <div class="card">
-                        <img class="room_image" src={{ product.images[0].url }} alt="room">
+                        <img class="room_image" src={{ product.images[0].url }} alt="room image">
                         <div class="card_body">
                             <div class="name_and_price">
                                 <p class="room_name">{{ product.title }}</p>
                                 <p class="room_price">{{ product.formatted_price }}</p>
                             </div>
-                            <a href="room/{{product.slug}}" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                            <a href="room/{{product.slug}}" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png" alt="arrow icon"></img></a>
                         </div>
                     </div>
 			    {% endfor %}
@@ -128,20 +128,20 @@
     </div>
 
     <div class="service">
-        <img class="service_background" src="images/pozadina_2.png" alt=""></img>
-        <img class="service_maid" src="images/pozadina_3.png" alt=""></img>
+        <img class="service_background" src="images/background_image_2.png" alt="background image"></img>
+        <img class="service_maid" src="images/background_image_3.png" alt="background image"></img>
 
         <div class="service_align">
             <div class="about_us-container">
-                <h3 class="naslov">Excellent service</h3>
-                <p class="podnaslov">Every day is a new day for relaxation.</p>
+                <h3 class="title">Excellent service</h3>
+                <p class="subtitle">Every day is a new day for relaxation.</p>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis gravida metus quis varius. Nullam sit amet fringilla velit, non pretium nibh. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque.</p>
-                <a href="#" class="learn_more-link">Learn more<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                <a href="#" class="learn_more-link">Learn more<img class="learn_more-arrow" src="images/learn_more-arrow.png" alt="arrow icon"></img></a>
             </div>
 
             <div class="feature_cards">
                 <div class="card">
-                    <img src="images/services-1.png" alt=""></img>
+                    <img src="images/services-1.png" alt="bed icon"></img>
                     <div class="card_body">
                         <h4>Orthopedic beds</h4>
                         <div class="line"></div>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/services-2.png" alt=""></img>
+                    <img src="images/services-2.png" alt="cousine icon"></img>
                     <div class="card_body">
                         <h4>Extraordinary cousine</h4>
                         <div class="line"></div>
@@ -157,7 +157,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/services-3.png" alt=""></img>
+                    <img src="images/services-3.png" alt="coffee icon"></img>
                     <div class="card_body">
                         <h4>Custom coffee</h4>
                         <div class="line"></div>
@@ -172,8 +172,8 @@
         <div class="news_align">
             <h3 class="naslov">Recent news</h3>
             <div class="slider">
-                <a class="button-left news-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt=""></a>
-                <a class="button-right news-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt=""></a>
+                <a class="button-left news-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt="slider prev arrow"></a>
+                <a class="button-right news-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt="slider next arrow"></a>
                 <div class="slick-slider-2">
                     {% for new in news %}
                         <div class="news-card">
@@ -181,7 +181,7 @@
                             <div class="news-card-header">
                                 <div class="promo-tag">
                                     <div class="">
-                                        <img class="tag" src="images/tag.png" alt="tag"/>
+                                        <img class="tag" src="images/tag.png" alt="tag icon"/>
                                     </div>
                                     
                                     <div class="promo-info">
@@ -189,14 +189,14 @@
                                         <p class="promo-date">August 25-31</p>
                                     </div>
                                 </div>
-                                <img class="news-image" src={{new.image}}/>
+                                <img class="news-image" src={{new.image}} alt="news image"/>
                                 
                             </div>
                             <div class="news-card-body">
                                 <p class="news-category">{{ new.category }}</p>
                                 <p class="news-title">{{ new.title }}</p>
                                 <p class="news-description">{{ new.description }}</p>
-                                <a class="news-learn_more">Learn more <img src="/images/learn_more-arrow.png"></a>
+                                <a class="news-learn_more">Learn more <img src="/images/learn_more-arrow.png" alt="arrow icon"></a>
                             </div>
 
                         </div>
@@ -205,10 +205,10 @@
             </div>
         </div>
         <div class="background"></div>
-        <img src="images/pozadina_4.png" alt=""></img>
+        <img src="images/background_image_4.png" alt=""></img>
         <div class="booking">
             <div class="card">
-                <h3 class="naslov">Discover a Hotel features</h3>
+                <h3 class="title">Discover a Hotel features</h3>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis gravida metus quis varius. Nullam sit amet fringilla velit, non pretium nibh. Etiam condimentum diam sapien, a hendrerit est pellentesque. Etiam condimentum diam sapien, a hendrerit est pellentesque.</p>
                 <button class="book_now">Book now</button>
             </div>
@@ -216,10 +216,10 @@
     </div>
 
     <div class="reviews">
-        <h3 class="naslov">Guest reviews</h3>
+        <h3 class="title">Guest reviews</h3>
         <div class="slider">
-            <a class="button-left reviews-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt=""></a>
-            <a class="button-right reviews-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt=""></a>
+            <a class="button-left reviews-button-left"><img class="arrow" src="/images/arrow_prev_black.png" alt="slider prev icon"></a>
+            <a class="button-right reviews-button-right"><img class="arrow" src="/images/arrow_next_black.png" alt="slider next arrow"></a>
             <div class="slick-slider-3">
                 {% for review in reviews %}
                     <div class="review-card">
@@ -267,11 +267,11 @@
                 <p>Every day is a new day for relaxation.</p>
                 <div class="follow_us-container">
                     <p class="follow_us">Follow us</p>
-                    <img class="icon" src="images/facebook.png" alt="">
-                    <img class="icon" src="images/instagram.png" alt="">
+                    <img class="icon" src="images/facebook.png" alt="facebook icon">
+                    <img class="icon" src="images/instagram.png" alt="instagram icon">
                 </div>
             </div><div class="block-2">
-                <p class="naslov">Address</p>
+                <p class="title">Address</p>
                 <p class="city">London</p>
                 <p class="address">Main street 1 London, CA 70413</p>
                 <p class="opening">Open: 9:30AM 5:30PM</p>
@@ -279,13 +279,13 @@
                 <p class="address">Great street Broadway, NT 10013</p>
                 <p class="opening">Open: 8:30AM 4:30PM</p>
             </div><div class="block-3">
-                <p class="naslov">Cotact us</p>
+                <p class="title">Cotact us</p>
                 <p class="number">+44 (800) 456-78-91</p>
                 <p class="email">hotel.london@mail.com</p>
                 <p class="number">+1 (810) 456-78-91</p>
                 <p class="email">hotel.ny@mail.com</p>
             </div><div class="block-4">
-                <p class="naslov">Stay in touch</p>
+                <p class="title">Stay in touch</p>
                 <input class="input-email" type="text" placeholder="Your email">
                 <button class="subscribe">Subscribe</button>
             </div>
