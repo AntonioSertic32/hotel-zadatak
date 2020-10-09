@@ -59,6 +59,7 @@
 {% endblock %}
 
 {% block home %}
+<div class="">
     <div class="home">
         <img class="pozadina" src="images/pozadina.png" alt="">
         <div class="home-container">
@@ -82,25 +83,21 @@
                 <div class="slick-slider-1">
                     {% for product in products %}
                         <div class="card">
-                            <a href="room/{{product.slug}}">
-                                <img class="room_image" src={{ product.images[0].url }} alt="room">
-                                <div class="card_body">
-                                    <div class="name_and_price">
-                                        <p class="room_name">{{ product.title }}</p>
-                                        <p class="room_price">{{ product.formatted_price }}</p>
-                                    </div>
-                                    <a href="#" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                            <img class="room_image" src={{ product.images[0].url }} alt="room">
+                            <div class="card_body">
+                                <div class="name_and_price">
+                                    <p class="room_name">{{ product.title }}</p>
+                                    <p class="room_price">{{ product.formatted_price }}</p>
                                 </div>
-                            </a>
+                                <a href="room/{{product.slug}}" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-{% endblock %}
 
-{% block apartmants %}
     <div class="apartmants">
         <div class="apartmants-container">
             <div class="about_us-container">
@@ -118,24 +115,20 @@
             <div class="best_apartmants">
                 {% for product in products %}
                     <div class="card">
-                        <a href="room/{{product.slug}}">
-                            <img class="room_image" src={{ product.images[0].url }} alt="room">
-                            <div class="card_body">
-                                <div class="name_and_price">
-                                    <p class="room_name">{{ product.title }}</p>
-                                    <p class="room_price">{{ product.formatted_price }}</p>
-                                </div>
-                                <a href="#" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                        <img class="room_image" src={{ product.images[0].url }} alt="room">
+                        <div class="card_body">
+                            <div class="name_and_price">
+                                <p class="room_name">{{ product.title }}</p>
+                                <p class="room_price">{{ product.formatted_price }}</p>
                             </div>
-                        </a>
+                            <a href="room/{{product.slug}}" class="view_details">View details<img class="learn_more-arrow" src="images/learn_more-arrow.png"></img></a>
+                        </div>
                     </div>
 			    {% endfor %}
             </div>
         </div>
     </div>
-{% endblock %}
 
-{% block service %}
     <div class="service">
         <img class="service_background" src="images/pozadina_2.png" alt=""></img>
         <img class="service_maid" src="images/pozadina_3.png" alt=""></img>
@@ -176,9 +169,7 @@
             </div>
         </div>
     </div>
-{% endblock %}
 
-{% block news %}
     <div class="news">
         <div class="news_align">
             <h3 class="naslov">Recent news</h3>
@@ -225,9 +216,7 @@
             </div>
         </div>
     </div>
-{% endblock %}
 
-{% block reviews %}
     <div class="reviews">
         <h3 class="naslov">Guest reviews</h3>
         <div class="slider">
@@ -269,6 +258,7 @@
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block footer %}
