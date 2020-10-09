@@ -1,13 +1,11 @@
 $(document).ready(function() {
-  /*
   $(".slick-slider-1").slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
+    speed: 700,
     nextArrow: $(".buttonLeft"),
   });
-  */
 
   $(".slick-slider-2").slick({
     infinite: true,

@@ -299,37 +299,36 @@ nav {
   height: 29.7;
 }
 
-.home .home-container .home-slider {
-  position: absolute;
-  top: 508px;
-  left: 400px;
+.home .home-container .slick-slider-1 {
+  overflow: hidden;
+  margin-top: -350px;
+  width: 1430px;
+  margin-left: 430px;
+  max-height: 351px;
 }
 
-.home .home-container .home-slider .slick-slider-1 {
-  position: relative;
-}
-
-.home .home-container .home-slider .slick-slider-1 .card {
-  width: 441px;
+.home .home-container .slick-slider-1 .card {
+  width: 441px !important;
   height: 351px;
   background-color: #fff;
   display: inline-block;
+  margin: 0 30px;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card .room_image {
+.home .home-container .slick-slider-1 .card .room_image {
   width: 100%;
   height: 233px;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card .card_body {
+.home .home-container .slick-slider-1 .card .card_body {
   padding: 30px;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card .card_body .name_and_price {
+.home .home-container .slick-slider-1 .card .card_body .name_and_price {
   color: #383B37;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card .card_body .name_and_price .room_name {
+.home .home-container .slick-slider-1 .card .card_body .name_and_price .room_name {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -337,7 +336,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card .card_body .name_and_price .room_price {
+.home .home-container .slick-slider-1 .card .card_body .name_and_price .room_price {
   display: inline-block;
   font-weight: bold;
   font-size: 30px;
@@ -346,7 +345,7 @@ nav {
   margin-top: 13px;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card .card_body .view_details {
+.home .home-container .slick-slider-1 .card .card_body .view_details {
   font-weight: bold;
   font-size: 16px;
   line-height: 23px;
@@ -354,12 +353,16 @@ nav {
   text-decoration: none;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card .card_body .view_details img {
+.home .home-container .slick-slider-1 .card .card_body .view_details img {
   margin-left: 18.6px;
 }
 
-.home .home-container .home-slider .slick-slider-1 .card:not(:last-child) {
-  margin-right: 40px;
+.home .home-container .slick-list {
+  margin: 0 -30px;
+}
+
+.home .home-container .slick-track {
+  padding-left: 20px;
 }
 
 .apartmants {

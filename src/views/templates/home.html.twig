@@ -59,7 +59,7 @@
 {% endblock %}
 
 {% block home %}
-<div class="">
+<div>
     <div class="home">
         <img class="pozadina" src="images/pozadina.png" alt="">
         <div class="home-container">
@@ -79,8 +79,7 @@
                 </button>
             </div>
 
-            <div class="home-slider">
-                <div class="slick-slider-1">
+            <div class="slick-slider-1">
                     {% for product in products %}
                         <div class="card">
                             <img class="room_image" src={{ product.images[0].url }} alt="room">
@@ -93,7 +92,6 @@
                             </div>
                         </div>
                     {% endfor %}
-                </div>
             </div>
         </div>
     </div>
