@@ -993,9 +993,59 @@ nav
   color:
 
   .slider
-    height: 694px
     margin-bottom: 17px
-    background-color: yellow
+    overflow: hidden
+
+    .button-left, .button-right
+      position: absolute
+      width: 11px
+      height: 20px
+      z-index: 1
+
+      &:hover
+        cursor: pointer
+
+      .arrow
+        width: 11px
+        height: 20px
+
+    .button-left
+      margin-left: -3%
+      margin-top: 110px
+
+    .button-right
+      margin-top: 110px
+      margin-left: 72%
+
+    .slider-for
+      width: 100%
+      height: 500px
+
+      img
+        width: 100%
+        height: 500px
+        object-fit: cover
+
+    .slider-nav
+      height: 164px
+      overflow: hidden
+      margin-top: 30px
+
+      .item
+        margin: 0 30px
+
+        img
+          width: 100%
+          height: 164px
+
+    .slider-nav .slick-track
+      height: 164px
+
+    .item
+      display: inline-block
+
+  .slick-list
+    margin: 0 -30px
 
   .podnaslov
     font-weight: bold

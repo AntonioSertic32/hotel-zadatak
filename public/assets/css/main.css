@@ -1200,9 +1200,76 @@ nav {
 }
 
 .room .slider {
-  height: 694px;
   margin-bottom: 17px;
-  background-color: yellow;
+  overflow: hidden;
+}
+
+.room .slider .button-left,
+.room .slider .button-right {
+  position: absolute;
+  width: 11px;
+  height: 20px;
+  z-index: 1;
+}
+
+.room .slider .button-left:hover,
+.room .slider .button-right:hover {
+  cursor: pointer;
+}
+
+.room .slider .button-left .arrow,
+.room .slider .button-right .arrow {
+  width: 11px;
+  height: 20px;
+}
+
+.room .slider .button-left {
+  margin-left: -3%;
+  margin-top: 110px;
+}
+
+.room .slider .button-right {
+  margin-top: 110px;
+  margin-left: 72%;
+}
+
+.room .slider .slider-for {
+  width: 100%;
+  height: 500px;
+}
+
+.room .slider .slider-for img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.room .slider .slider-nav {
+  height: 164px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.room .slider .slider-nav .item {
+  margin: 0 30px;
+}
+
+.room .slider .slider-nav .item img {
+  width: 100%;
+  height: 164px;
+}
+
+.room .slider .slider-nav .slick-track {
+  height: 164px;
+}
+
+.room .slider .item {
+  display: inline-block;
+}
+
+.room .slick-list {
+  margin: 0 -30px;
 }
 
 .room .podnaslov {

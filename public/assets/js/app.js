@@ -97,6 +97,23 @@ $(document).ready(function () {
     nextArrow: $(".reviews-button-right"),
     dots: true
   });
+
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".slider-nav"
+  });
+  $(".slider-nav").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    focusOnSelect: true,
+    infinite: true,
+    prevArrow: $(".room-button-left"),
+    nextArrow: $(".room-button-right")
+  });
 });
 
 /***/ }),
