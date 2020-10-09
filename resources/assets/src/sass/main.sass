@@ -1035,7 +1035,7 @@ nav
       margin-top: 30px
 
       .item
-        margin: 0 30px
+        margin: 0 60px
 
         img
           width: 100%
@@ -1048,7 +1048,7 @@ nav
       display: inline-block
 
   .slick-list
-    margin: 0 -30px
+    margin: 0 -60px
 
   .podnaslov
     font-weight: bold
@@ -1239,7 +1239,7 @@ nav
       margin-bottom: 15px
 
     .actual_comments
-      height: 443px
+      height: auto
       width: 70%
       margin-bottom: 30px
 
@@ -1291,36 +1291,38 @@ nav
               line-height: 23px
               color: #383B37
 
-        .commment_text-replyed_comments
-          display: flex
-          margin-top: 8px
-          width: 80%
-          flex-wrap: wrap
-          flex-direction: column
-          align-content: flex-end
-          margin-left: auto
-          margin-right: 0
+        .comment_text
+          width: 100%
+          margin-top: 20px
+          margin-bottom: 40px
+
+          .filler
+            display: inline-block
+            width: 20%
+            height: auto
+
+          .content
+            display: inline-block
+            width: 80%
+
+        .replyed_comments
+          width: 100%
+
+          .filler
+            display: inline-block
+            width: 20%
+            height: auto
+
+          .replyed_comment
+            display: inline-block
+            width: 70%
 
           .comment_text
-
-            align-items: flex-start
 
             p
               font-size: 16px
               line-height: 23px
               color: #383B37
-
-          .replyed_comments
-            width: 80%
-            align-items: flex-start
-            margin-top: 30px
-            .replyed_comments_creator
-
-              .replyed_comment_creator-info
-
-                .name
-
-                .date
 
     .input-name, .input-email
       display: inline-block

@@ -1255,7 +1255,7 @@ nav {
 }
 
 .room .slider .slider-nav .item {
-  margin: 0 30px;
+  margin: 0 60px;
 }
 
 .room .slider .slider-nav .item img {
@@ -1272,7 +1272,7 @@ nav {
 }
 
 .room .slick-list {
-  margin: 0 -30px;
+  margin: 0 -60px;
 }
 
 .room .podnaslov {
@@ -1520,7 +1520,7 @@ nav {
 }
 
 .room .comments .actual_comments {
-  height: 443px;
+  height: auto;
   width: 70%;
   margin-bottom: 30px;
 }
@@ -1580,42 +1580,42 @@ nav {
   color: #383B37;
 }
 
-.room .comments .actual_comments .comment_container .commment_text-replyed_comments {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 8px;
+.room .comments .actual_comments .comment_container .comment_text {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.room .comments .actual_comments .comment_container .comment_text .filler {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}
+
+.room .comments .actual_comments .comment_container .comment_text .content {
+  display: inline-block;
   width: 80%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  margin-left: auto;
-  margin-right: 0;
 }
 
-.room .comments .actual_comments .comment_container .commment_text-replyed_comments .comment_text {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.room .comments .actual_comments .comment_container .replyed_comments {
+  width: 100%;
 }
 
-.room .comments .actual_comments .comment_container .commment_text-replyed_comments .comment_text p {
+.room .comments .actual_comments .comment_container .replyed_comments .filler {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}
+
+.room .comments .actual_comments .comment_container .replyed_comments .replyed_comment {
+  display: inline-block;
+  width: 70%;
+}
+
+.room .comments .actual_comments .comment_container .replyed_comments .comment_text p {
   font-size: 16px;
   line-height: 23px;
   color: #383B37;
-}
-
-.room .comments .actual_comments .comment_container .commment_text-replyed_comments .replyed_comments {
-  width: 80%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: 30px;
 }
 
 .room .comments .input-name,
